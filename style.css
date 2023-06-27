@@ -1,80 +1,83 @@
-.logo{
-    border-radius: 10%;
-    transition: 1s;
-    width: 8%;
+
+header{
+    grid-area: cab;
+    border: gold 2px solid ;
 }
-.logo:hover{
-    width: 10%;
-    border-radius: 40%;
-    transition: 1s;
+aside{
+    grid-area: bra;
+    border: green 2px solid;
 }
-.fundo1{
-    background-image:url(imagem/fundo1.jpg);
+main{
+    grid-area: pri;
+    border: purple 2px solid;
 }
-.eu{
-    border-radius: 10%;
-    transition: 1s;
-    width: 8%;
-    text-decoration: none; 
-    font-size: 1.5rem;
-    border: solid rgb(203, 163, 178);
-    background: rgb(224, 174, 174);
-    transition: 1s;
-    margin: 1rem;
-}
-.eu:hover{ 
-    width: 10%;
-    border-radius: 40%;
-    transition: 1s;
-    font-size: 1.1rem;
-    color: white; 
-    border: solid rgb(254, 254, 254); 
-    margin: 1rem;
-}
-.tu{
-    border-radius: 10%;
-    transition: 1s;
-    width: 8%;
-    text-decoration: none; 
-    font-size: 1.5rem;
-    border: solid rgb(203, 163, 178);
-    background: rgb(224, 174, 174);
-    transition: 1s;
-    margin: 1rem;
-}
-.tu:hover{
-    width: 10%;
-    border-radius: 40%;
-    transition: 1s;
-    font-size: 1.1rem;
-    color: white; 
-    border: solid rgb(254, 254, 254); 
-    margin: 1rem;
+footer{
+    grid-area: rod;
+    border: rgb(68, 25, 239) 2px solid;
 }
 header{
     text-align: center;
-    background-image: linear-gradient(to right, rgba(156, 222, 200, 0.4) , rgb(240, 151, 165, 0.4));
+    background-image: linear-gradient(to right, rgb(89, 255, 200, 0.4) , rgb(240, 151, 165, 0.4));
     display: flex;
-    display: flexbox;
-    display: grid;
+}
+header li{
+    display: inline;
+    margin: 0 0 0 100px;
+}
+header a{
+    text-decoration: none; 
+    font-size: 1.5rem;
+    color: rgb(2, 2, 2);
+    border: solid rgb(0, 0, 0);
+    background: rgb(224, 174, 174);
+    transition: 1s;
+}
+header a:hover{
+    font-size: 1.1rem;
+    color: white; 
+    border: solid rgb(0, 0, 0); 
+    background: black; 
+}
+header, aside, main, footer{
+    background-color: rgba(225, 201, 228, 0.7);
 }
 body{
-    color: rgb(23, 23, 23);
-}
-main{
     display: grid;
-    display: flexbox;
+    grid-template-areas: 
+    "cab ceb"
+    "bra pri"
+    "rod rod";
+    grid-template-columns:auto;
+    grid-template-rows:auto;
+}
+.fundo1{
+    background-image:url(imagem/fundo1.jpg);
 
 }
+.logo1{
+    border-radius: 10%;
+    transition: 1s;
+    width: 15%;
+}
+.logo:hover{
+    width: 15%;
+    border-radius: 40%;
+    transition: 1s;
+}
+
+nav{
+    margin-top: 1rem;
+}
+
 nav li{
     display: inline;
     margin: 1rem; 
-    color: black;
 }
 nav a{
     text-decoration: none; 
     font-size: 1.5rem;
-    border: solid rgb(203, 163, 178);
+    color: rgb(2, 2, 2,);
+    border: solid rgb(0, 0, 0);
     background: rgb(224, 174, 174);
     transition: 1s;
 }
@@ -83,28 +86,81 @@ nav a:hover{
     font-size: 1.1rem;
     color: white; 
     border: solid rgb(254, 254, 254); 
+    background: black; 
 }
+
 footer{
     text-align: center;
-    background-image: linear-gradient(to right, rgba(156, 222, 200, 0.4) , rgb(240, 151, 165, 0.4));
+    background-image: linear-gradient(to right, rgb(89, 255, 200, 0.4) , rgb(240, 151, 165, 0.4));
     display: flex;
-    display: flexbox;
-    display: grid;
 }
 footer li{
     display: inline;
     margin: 0 0 0 100px;
-    color: black;
 }
 footer a{
     text-decoration: none; 
     font-size: 1.5rem;
-    border: solid rgb(203, 163, 178);
+    color: rgb(2, 2, 2);
+    border: solid rgb(0, 0, 0);
     background: rgb(224, 174, 174);
     transition: 1s;
 }
 footer a:hover{
     font-size: 1.1rem;
     color: white; 
-    border: solid rgb(255, 255, 255); 
+    border: solid rgb(0, 0, 0); 
+    background: black; 
+}
+
+main{
+    text-align: justify; 
+    background-color: rgba(231, 202, 248, 0.5);
+    margin: 2rem; 
+    padding: 2rem; 
+    color: rgb(0, 0, 0);
+}
+.fundo{
+    width: 40%; 
+    float: right; 
+    margin: 1rem;
+}
+.saia{
+    border-radius: 10%;
+    transition: 1s;
+    width: 15%;
+    border: black 2px solid;
+}
+.saia:hover{
+    width: 10%;
+    border-radius: 40%;
+    transition: 1s;
+    border: black 2px solid;
+}
+.colant{
+    border-radius: 10%;
+    transition: 1s;
+    width: 15%;
+}
+.colant:hover{
+    border-radius: 40%;
+    transition: 1s;
+    width: 10%;
+}
+.saia img{
+    width: 350px;
+    height: 200px;
+}
+
+.saia{
+    background-color: #fff;
+    width: 400;
+    box-shadow: 4px 4px 4px 4px #aaaa;
+    border-radius: 5px;
+}
+
+.saia div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
