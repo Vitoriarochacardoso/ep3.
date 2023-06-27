@@ -28,14 +28,14 @@ header a{
     text-decoration: none; 
     font-size: 1.5rem;
     color: rgb(2, 2, 2);
-    border: solid rgb(0, 0, 0);
-    background: rgb(224, 174, 174);
+    border: solid rgb(red, green, blue);
+    background: rgb(233, 163, 209);
     transition: 1s;
 }
 header a:hover{
     font-size: 1.1rem;
     color: white; 
-    border: solid rgb(0, 0, 0); 
+    border: solid rgb(237, 175, 223); 
     background: black; 
 }
 header, aside, main, footer{
@@ -47,8 +47,8 @@ body{
     "cab ceb"
     "bra pri"
     "rod rod";
-    grid-template-columns:auto;
-    grid-template-rows:auto;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
 }
 .fundo1{
     background-image:url(imagem/fundo1.jpg);
@@ -153,6 +153,23 @@ main{
 }
 
 .saia{
+    background-color: #fff;
+    width: 400;
+    box-shadow: 4px 4px 4px 4px #aaaa;
+    border-radius: 5px;
+}
+
+.colant div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.colant img{
+    width: 350px;
+    height: 200px;
+}
+
+.colant{
     background-color: #fff;
     width: 400;
     box-shadow: 4px 4px 4px 4px #aaaa;
