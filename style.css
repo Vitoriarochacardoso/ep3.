@@ -186,3 +186,7 @@ transition: 3s;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
+.notas{
+    height: 180px;
+    width: 160px;
+}
