@@ -11,8 +11,8 @@ aside{
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
-.cor_preta{
-    color: black;
+#letra_preta{
+    color: rgb(0, 0, 0);
 }
 main{
     grid-area: pri;
@@ -198,7 +198,7 @@ transition: 3s;
     transform: rotate(90deg);
     opacity: 1;
 }
-@media only screen (max-width-800px){
+@media only screen(max-width-800px){
     body{
         grid-template-area:
         "cab"
@@ -206,7 +206,11 @@ transition: 3s;
         "pri"
         "rod"
         grid-auto-columns: 1fr;
-        grid-template-rows: 100px 70px 500px 100px;
+        grid-template-rows:100px 70px 500px 100px;
     }
     
+} 
+.abacaxi{
+   display: flex;
+
 }
