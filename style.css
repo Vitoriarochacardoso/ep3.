@@ -12,7 +12,7 @@ aside{
     filter: alpha(opacity=50);
 }
 #letra_preta{
-    color: rgb(0, 0, 0);
+    color: rgb(117, 51, 106);
 }
 main{
     grid-area: pri;
@@ -116,6 +116,7 @@ nav{
     margin-top: 1rem;
     position:absolute;
     right: 500px;
+    top: 10px;
 }
 
 nav li{
@@ -198,19 +199,23 @@ transition: 3s;
     transform: rotate(90deg);
     opacity: 1;
 }
-@media only screen(max-width-800px){
+@media only screen and (max-width: 820px){
     body{
-        grid-template-area:
+        grid-template-areas:
         "cab"
-        "bra"
         "pri"
-        "rod"
+        "rod";
         grid-auto-columns: 1fr;
-        grid-template-rows:100px 70px 500px 100px;
+        grid-template-rows:100px auto 100px;
     }
+    aside{
+        display: none;
+    }    
     
 } 
+
 .abacaxi{
    display: flex;
 
 }
+
